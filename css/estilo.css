@@ -630,43 +630,49 @@ h3 a {
 
 @media only screen and (max-width: 768px){
 	.grid-containerProductos {
-	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
-	grid-row-gap: %;
-	grid-template-areas: 
-	"header header"
-	"introProductos introProductos"
-	"tituloJabon tituloJabon"
-	"jabonesShampoo jabonesShampoo"
-	"nombreJabon nombreJabon"
-	"tituloCremas tituloCremas"
-	"cremasFaciales cremasFaciales"
-	"nombreCremas nombreCremas"
-	"tituloBoxesKits tituloBoxesKits"
-	"boxesKits boxesKits"
-	"nombreBoxesKits nombreBoxesKits"
-	"footerIzq footerDer";}
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+		grid-row-gap: %;
+		grid-template-areas: 
+		"header header"
+		"introProductos introProductos "
+		"tituloJabon tituloJabon "
+		"jabonSolido jabonSolido"
+		"jabonMasajeador jabonMasajeador" 
+		"shampooSolido shampooSolido"
+		"tituloCremas tituloCremas"
+		"cremaHigia cremaHigia" 
+		"cremaLavanda cremaLavanda" 
+		"cremaPerse cremaPerse"
+		"tituloBoxesKits tituloBoxesKits"
+		"boxTriana boxTriana"
+		"boxJabones boxJabones"
+		"kitShower kitShower"
+		"footerIzq footerDer";
 
-	
+	}
+
 	header {grid-area: header;}
 	.introProductos {grid-area: introProductos;}
 	.tituloJabon {grid-area: tituloJabon;}
-	.jabonesShampoo {grid-area: jabonesShampoo;}
-	.nombreJabon {grid-area: nombreJabon;}
+	.jabonSolido {grid-area: jabonSolido;}
+	.jabonMasajeador {grid-area: jabonMasajeador;}
+	.shampooSolido	{grid-area: shampooSolido;}
 	.tituloCremas {grid-area: tituloCremas;}
-	.cremasFaciales {grid-area: cremasFaciales;}
-	.nombreCremas {grid-area: nombreCremas;}
+	.cremaHigia {grid-area: cremaHigia;}
+	.cremaLavanda {grid-area: cremaLavanda;}
+	.cremaPerse {grid-area: cremaPerse;}
 	.tituloBoxesKits {grid-area: tituloBoxesKits;}
-	.boxesKits {grid-area: boxesKits;}
-	.nombreBoxesKits {grid-area: nombreBoxesKits;}
+	.boxTriana {grid-area: boxTriana;}
+	.boxJabones {grid-area: boxJabones;}
+	.kitShower {grid-area: kitShower;}
 	.footerIzq {grid-area: footerIzq;}
 	.footerMid {display: none;}
 	.footerDer {grid-area: footerDer;}
 
 
 	/*header*/
-
 	header {
 		display: flex;
 		flex-direction: row;
@@ -692,13 +698,18 @@ h3 a {
 	}
 
 	/*cierre header*/
-
+	/*intro productos mobile*/
 	.introProductos {
 		display: flex;
 		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		font-family: Questrial;
+		margin: 8%;
 	}
 
 	.introProductos h1 {
+		color: white;
 		font-size: 3rem;
 	}
 
@@ -706,27 +717,91 @@ h3 a {
 		display: none;
 	}
 
-	/*cierre intro productos*/
-	/* jabones y shampoo*/
+	/*seccion jabones y shampoo*/
 
-	.jabonesShampoo {
-		display: flex;
-		flex-direction: column;
+	.jabonSolido a {
+		width: 100%;
 	}
 
-	.jabonesShampoo img {
-		margin: 5%;
+	.jabonSolido a img {
+		width: 80%;
+		margin-left: 10%;
 	}
 
-	.nombreJabon {
-		position: relative;
+	.jabonMasajeador a {
+		width: 100%;
 	}
 
+	.jabonMasajeador a img {
+		width: 80%;
+		margin-left: 10%;	}
 
+	.shampooSolido a {
+		width: 100%;
+	}
 
+	.shampooSolido a img {
+		width: 80%;
+		margin-left: 10%;;
+	}
 
-	/*cierre jabones y shampoo*/
+	/*cierre jabones y shampoo mobile*/
+	/*cremas faciales mobile*/
 
+	.cremaHigia a {
+		width: 100%;
+	}
 
+	.cremaHigia a img {
+		width: 80%;
+		margin-left: 10%;;
+	}
 
+	.cremaLavanda a {
+		width: 100%;
+	}
+
+	.cremaLavanda a img {
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	.cremaPerse a {
+		width: 100%;
+	}
+
+	.cremaPerse a img {
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	/*cierre cremas faciales mobile*/
+	/*boxes y kits mobile*/
+
+	.boxTriana a {
+		width: 100%;
+	}
+
+	.boxTriana a img {
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	.boxJabones a {
+		width: 100%;
+	}
+
+	.boxJabones a img {
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	.kitSHower a {
+		width: 100%;
+	}
+
+	.kitShower a img {
+		width: 80%;
+		margin-left: 10%;
+	}
 }
