@@ -1,0 +1,778 @@
+/*grid-settings*/
+.grid-container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto auto auto auto auto auto;
+	grid-row-gap: %;
+	grid-template-areas: 
+	"header header"
+	"bienvenidos bienvenidos"
+	"productos productos"
+	"quienes quienes"
+	"contactoTitulo contactoTitulo"
+	"contactoImg contactoImg"
+	"footerIzq footerDer";
+
+}
+
+header {grid-area: header;}
+.bienvenidos {grid-area: bienvenidos;}
+.productos {grid-area: productos;}
+.quienes {grid-area: quienes;}
+.contactoTitulo {grid-area: contactoTitulo;}
+.contactoImg {grid-area: contactoImg;}
+.footerIzq {grid-area: footerIzq;}
+.footerDer {grid-area: footerDer;}
+
+/*cierre grid settings*/
+
+body {
+	background-image: url("../assets/img/fondo.jpg");
+}
+/*header*/
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-right: 20%;
+	padding-left: 20%;
+	background-color: #c5b475;
+}
+
+header a img {
+	margin: 3%;
+	width: 80%;
+}
+
+header nav {
+     width: 50%;
+}
+
+header nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	list-style-type: none;
+	font-weight: bolder;
+	margin-top: 9%;
+	margin-bottom: 0%;
+	padding-top: 3.2%;
+}
+
+header nav ul li {
+	display: inline;
+	align-content: flex-end;
+	padding: 2%;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	font-family: Questrial;
+	color: white;
+}
+
+/*header*/
+
+/*main*/
+
+.bienvenidos {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	font-family: Questrial;
+	margin: 14%;
+
+}
+
+.bienvenidos h1 {
+	color: white;
+	font-size: 2rem;
+}
+
+.bienvenidos p {
+	width: 50%;
+	text-align: center;
+	padding-right: 0%;
+	color: white;
+}
+
+
+/*cierre main*/
+/*productos*/
+
+.productos {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	color: white;
+	font-family: Questrial;
+	margin-top: 4%;
+	overflow: hidden;
+}
+
+.productos h2 {
+	margin: 3%;
+	font-size: 1.7rem;
+}
+
+.productos img {
+	border-radius: 2%;
+}
+
+
+/*cierre productos*/
+/*quienes somos*/
+
+.quienes {
+	display: flex;
+	justify-content: center;
+}
+
+.quienesTexto {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	background-color: #fdfdeb;
+	border-radius: 2%;
+	text-align: right;
+	margin-top: 7%;
+	width: 48%;
+	padding: 4.87%;
+}
+
+.quienesTexto article {
+	width: 50%;
+}
+
+.quienesTexto article h2,p {
+	padding-right: 5%;
+	font-family: Questrial;
+}
+
+.quienesTexto article p {
+	font-size: 1.2rem;
+}
+
+.quienesTexto article p a {
+	color: #8b7325;
+}
+
+.quienesTexto a img {
+	width: 100%;
+	border-radius: 2%;
+}
+
+/*cierre quienes somos*/
+/*contacto*/
+
+.contactoTitulo {
+	text-align: center;
+	margin-top: 7%;
+	margin-bottom: 3%;
+}
+
+.contactoTitulo a {
+	text-decoration: none;
+	text-decoration-color: white;
+	font-family: Questrial;
+	color: #fdfdeb;
+}
+
+.contactoImg {
+	display: flex;
+	justify-content: space-evenly;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/*cierre contacto*/
+/*footer*/
+
+.footerIzq {
+	background-color: #fdfdeb;
+	margin-top: 10%;
+}
+
+.footerIzq img {
+	margin: 2%;
+}
+
+.footerIzq p {
+	padding-left: 3%;
+}
+
+.footerIzq p a {
+	text-decoration: none;
+	font-weight: bolder;
+	color: black;
+}
+
+.footerDer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+	font-weight: bolder;
+	background-color: #fdfdeb;
+	margin-top: 10%;
+}
+
+.footerDer img {
+	margin: 10%;
+}
+
+.footerDer a {
+	padding-right: 1%;
+}
+
+.footerDer p {
+	padding-right: 1%;
+}
+/*cierre footer*/
+/*media queries*/
+
+
+@media only screen and (max-width: 768px){
+	.grid-container {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: auto auto auto auto auto auto auto;
+		grid-row-gap: %;
+		grid-template-areas: 
+		"header header"
+		"bienvenidos bienvenidos"
+		"productos productos"
+		"quienes quienes"
+		"contactoTitulo contactoTitulo"
+		"contactoImg contactoImg"
+		"footerIzq footerDer";
+	}
+
+	header {grid-area: header;}
+	.bienvenidos {grid-area: bienvenidos;}
+	.productos {grid-area: productos;}
+	.quienes {grid-area: quienes;}
+	.contactoTitulo {grid-area: contactoTitulo;}
+	.footerIzq {grid-area: footerIzq;}
+	.footerDer {grid-area: footerDer;}
+
+	/*header*/
+	header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding-right: 0%;
+		padding-left: 0%;
+	}
+
+	header div {
+		width: 100%;
+		align-content: center;
+	}
+
+
+	header div a img {
+		width: 33%;
+		padding-top: 1%;
+	}
+
+	header nav ul li {
+		width: 100%;
+		font-size: .7rem;
+	}
+	/*cierre header*/
+	/*main*/
+
+	.bienvenidos {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		font-family: Questrial;
+		margin: 8%;
+	}
+
+	.bienvenidos h1 {
+		color: white;
+		font-size: 1.5rem;
+	}
+
+	.bienvenidos p {
+		width: 100%;
+		text-align: center;
+		color: white;
+	}
+
+	/*cierre main*/
+	/*productos*/
+
+	.productos {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		color: white;
+		font-family: Questrial;
+		margin-top: 4%;
+		overflow: hidden;
+	}
+
+	.productos h2 {
+		margin: 3%;
+		font-size: 1.7rem;
+	}
+
+
+	.productos img {
+		border-radius: 2%;
+		width: 85%;
+		margin-left: 7.8%;
+	}
+	/*cierre productos*/
+	/*quienes somos*/
+
+	.quienes {
+		display: flex;
+		justify-content: center;
+	}
+
+	.quienesTextoMob {
+		display: flex;
+		flex-direction: column-reverse;
+		align-content: center;
+		background-color: #fdfdeb;
+		text-align: center;
+		margin-top: 7%;
+		width: 100%;
+	}
+
+	.quienesTextoMob article {
+		width: 100%;
+	}
+
+	.quienesTextoMob article h2 {
+		font-family: Questrial;
+		font-size: 1;
+	}
+
+	.quienesTextoMob article p {
+		font-family: Questrial;
+		font-size: 1rem;
+	}
+
+	.quienesTextoMob article p a {
+		color: #8b7325;
+	}
+
+	.quienesTextoMob article a img {
+		border-radius: 2%;
+	}
+
+
+	/*cierre quienes*/
+	/*contacto*/
+
+	.contactoTitulo {
+		text-align: center;
+		margin-top: 7%;
+		margin-bottom: 3%;
+	}
+
+	.contactoTitulo a {
+		text-decoration: none;
+		text-decoration-color: white;
+		font-family: Questrial;
+		color: #fdfdeb;
+	}
+
+	.contactoImg {
+		display: flex;
+		justify-content: space-between;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	/*cierre contacto*/
+	/*footer*/
+
+	
+	.footerIzq {
+		display: flex;
+		flex-direction: column;
+		background-color: none;
+		margin-top: 10%;
+	}
+
+	.footerIzq img {
+		display: none;
+	}
+
+	.footerIzq p {
+		padding-top: 10%;
+		padding-right: 26%;
+		font-size: .5rem;
+	}
+
+	.footerIzq p a {
+		text-decoration: underline;
+		font-weight: bolder;
+		color: black;
+	}
+
+	.footerDer {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		text-align: right;
+		font-weight: bolder;
+		background-color: none;
+		margin-top: 10%;
+	}
+
+	.footerDer a img {
+		width: 45%;
+		padding-top: 10%;
+	}
+
+	.footerDer p {
+		text-align: center;
+		padding-left: 25%;
+		padding-right: 65%;
+		font-size: .5rem;
+	}
+}
+
+/*cierre media querie mobile index*/
+
+/*INICIO PRODUCTOS*/
+/*inicio grid settings productos*/
+
+.grid-containerProductos {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+	grid-row-gap: %;
+	grid-template-areas: 
+	"header header header"
+	"introProductos introProductos introProductos"
+	"tituloJabon tituloJabon tituloJabon"
+	"jabonesShampoo jabonesShampoo jabonesShampoo"
+	"nombreJabon nombreJabon nombreJabon"
+	"tituloCremas tituloCremas tituloCremas"
+	"cremasFaciales cremasFaciales cremasFaciales"
+	"nombreCremas nombreCremas nombreCremas"
+	"tituloBoxesKits tituloBoxesKits tituloBoxesKits"
+	"boxesKits boxesKits boxesKits"
+	"nombreBoxesKits nombreBoxesKits nombreBoxesKits"
+	"footerIzq footerMid footerDer";
+
+}
+
+header {grid-area: header;}
+.introProductos {grid-area: introProductos;}
+.tituloJabon {grid-area: tituloJabon;}
+.jabonesShampoo {grid-area: jabonesShampoo;}
+.nombreJabon {grid-area: nombreJabon;}
+.tituloCremas {grid-area: tituloCremas;}
+.cremasFaciales {grid-area: cremasFaciales;}
+.nombreCremas {grid-area: nombreCremas;}
+.tituloBoxesKits {grid-area: tituloBoxesKits;}
+.boxesKits {grid-area: boxesKits;}
+.nombreBoxesKits {grid-area: nombreBoxesKits;}
+.footerIzq {grid-area: footerIzq;}
+.footerMid {grid-area: footerMid;}
+.footerDer {grid-area: footerDer;}
+
+/*cierre grid settings productos*/
+/*intro productos*/
+
+.introProductos {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	font-family: Questrial;
+	margin: 8%;
+}
+
+.introProductos h1 {
+	color: white;
+	font-size: 5rem;
+}
+
+.introProductos p {
+	width: 50%;
+	text-align: center;
+	padding-right: 0%;
+	color: white;
+}
+
+/*cierre productos*/
+/*seccion jabones y shampoo*/
+
+.tituloJabon {
+	text-align: center;
+	font-family: Questrial;
+	color: white;
+	margin: 4%;
+}
+
+.jabonesShampoo {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.jabonesShampoo img {
+	width: 90%;
+	border-radius: 5%;
+}
+
+.nombreJabon {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.nombreJabon a {
+	text-decoration: none;
+	color: white;
+	font-family: Questrial;
+	letter-spacing: .2rem;
+}
+
+.jabonsolido {
+	padding-left: 12.5%;
+}
+
+.jabonmasajeador {
+	padding-right: 
+}
+
+.shampoosolido {
+	padding-right: 14%;
+}
+
+/*cierre seccion jabones y shampoo*/
+/*seccion cremas faciales*/
+
+.tituloCremas {
+	text-align: center;
+	font-family: Questrial;
+	color: white;
+	margin: 4%;
+}
+
+.cremasFaciales {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.cremasFaciales img {
+	width: 90%;
+	border-radius: 5%;
+}
+
+.nombreCremas {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.nombreCremas a {
+	text-decoration: none;
+	color: white;
+	font-family: Questrial;
+	letter-spacing: .2rem;
+}
+
+.cremaHigia {
+	padding-left: 10%;
+}
+
+.cremaLavanda {
+	padding-left: 2.5%;
+}
+
+.cremaPersefone {
+	padding-right: 11.5%;
+}
+
+/*cierre seccion cremas faciales*/
+/*seccion boxes y kits*/
+
+.tituloBoxesKits {
+	text-align: center;
+	font-family: Questrial;
+	color: white;
+	margin: 4%;
+}
+
+.boxesKits {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.boxesKits img {
+	width: 90%;
+	border-radius: 5%;
+}
+
+.boxJabonesImg {
+	padding-left: 3%;
+}
+
+.boxTrianaImg {
+	padding-left: 3%;
+}
+
+.kitShowerImg {
+	padding-right: 2%;
+}
+
+.nombreBoxesKits {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.nombreBoxesKits a {
+	text-decoration: none;
+	color: white;
+	font-family: Questrial;
+	letter-spacing: .2rem;
+}
+
+.boxTrianaNom {
+	padding-left: 13.5%;
+}
+
+.boxJabonesNom {
+	padding-left: 1.5%;
+}
+
+.kitShowerNom {
+	padding-right: 15%;
+}
+
+/*cierre boxes y kits*/
+/*footer*/
+
+.footerMid {
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+	padding-top: 30%;
+	background-color: #fdfdeb;
+}
+
+.footerMid h4 a {
+	text-decoration: none;
+	color: black;
+	font-family: Questrial;
+	letter-spacing: .2rem;
+}
+
+/*cierre footer*/
+/*media queria mobile productos*/
+
+@media only screen and (max-width: 768px){
+	.grid-containerProductos {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+	grid-row-gap: %;
+	grid-template-areas: 
+	"header header"
+	"introProductos introProductos"
+	"tituloJabon tituloJabon"
+	"jabonesShampoo jabonesShampoo"
+	"nombreJabon nombreJabon"
+	"tituloCremas tituloCremas"
+	"cremasFaciales cremasFaciales"
+	"nombreCremas nombreCremas"
+	"tituloBoxesKits tituloBoxesKits"
+	"boxesKits boxesKits"
+	"nombreBoxesKits nombreBoxesKits"
+	"footerIzq footerDer";}
+
+	
+	header {grid-area: header;}
+	.introProductos {grid-area: introProductos;}
+	.tituloJabon {grid-area: tituloJabon;}
+	.jabonesShampoo {grid-area: jabonesShampoo;}
+	.nombreJabon {grid-area: nombreJabon;}
+	.tituloCremas {grid-area: tituloCremas;}
+	.cremasFaciales {grid-area: cremasFaciales;}
+	.nombreCremas {grid-area: nombreCremas;}
+	.tituloBoxesKits {grid-area: tituloBoxesKits;}
+	.boxesKits {grid-area: boxesKits;}
+	.nombreBoxesKits {grid-area: nombreBoxesKits;}
+	.footerIzq {grid-area: footerIzq;}
+	.footerMid {display: none;}
+	.footerDer {grid-area: footerDer;}
+
+
+	/*header*/
+
+	header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding-right: 0%;
+		padding-left: 0%;
+	}
+
+	header div {
+		width: 100%;
+		align-content: center;
+	}
+
+
+	header div a img {
+		width: 33%;
+		padding-top: 1%;
+	}
+
+	header nav ul li {
+		width: 100%;
+		font-size: .7rem;
+	}
+
+	/*cierre header*/
+
+	.introProductos {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.introProductos h1 {
+		font-size: 3rem;
+	}
+
+	.introProductos p {
+		display: none;
+	}
+
+	/*cierre intro productos*/
+	/* jabones y shampoo*/
+
+	.jabonesShampoo {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.jabonesShampoo img {
+		margin: 5%;
+	}
+
+
+
+
+	/*cierre jabones y shampoo*/
+
+
+
+}
