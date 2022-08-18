@@ -463,8 +463,7 @@ header nav ul li a {
 	"tituloCremas tituloCremas tituloCremas"
 	"cremaHigia cremaLavanda cremaPerse"
 	"tituloBoxesKits tituloBoxesKits tituloBoxesKits"
-	"boxesKits boxesKits boxesKits"
-	"nombreBoxesKits nombreBoxesKits nombreBoxesKits"
+	"boxTriana boxJabones kitShower"
 	"footerIzq footerMid footerDer";
 
 }
@@ -480,8 +479,9 @@ header {grid-area: header;}
 .cremaLavanda {grid-area: cremaLavanda;}
 .cremaPerse {grid-area: cremaPerse;}
 .tituloBoxesKits {grid-area: tituloBoxesKits;}
-.boxesKits {grid-area: boxesKits;}
-.nombreBoxesKits {grid-area: nombreBoxesKits;}
+.boxTriana {grid-area: boxTriana;}
+.boxJabones {grid-area: boxJabones;}
+.kitShower {grid-area: kitShower;}
 .footerIzq {grid-area: footerIzq;}
 .footerMid {grid-area: footerMid;}
 .footerDer {grid-area: footerDer;}
@@ -588,52 +588,24 @@ h3 a {
 	margin: 4%;
 }
 
-.boxesKits {
+.boxTriana {
 	display: flex;
-	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
 }
 
-.boxesKits img {
-	width: 90%;
-	border-radius: 5%;
-}
-
-.boxJabonesImg {
-	padding-left: 3%;
-}
-
-.boxTrianaImg {
-	padding-left: 3%;
-}
-
-.kitShowerImg {
-	padding-right: 2%;
-}
-
-.nombreBoxesKits {
+.boxJabones {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
 }
 
-.nombreBoxesKits a {
-	text-decoration: none;
-	color: white;
-	font-family: Questrial;
-	letter-spacing: .2rem;
+.kitShower {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.boxTrianaNom {
-	padding-left: 13.5%;
-}
-
-.boxJabonesNom {
-	padding-left: 1.5%;
-}
-
-.kitShowerNom {
-	padding-right: 15%;
-}
 
 /*cierre boxes y kits*/
 /*footer*/
