@@ -459,11 +459,9 @@ header nav ul li a {
 	"header header header"
 	"introProductos introProductos introProductos"
 	"tituloJabon tituloJabon tituloJabon"
-	"jabonesShampoo jabonesShampoo jabonesShampoo"
-	"nombreJabon nombreJabon nombreJabon"
+	"jabonSolido jabonMasajeador shampooSolido"
 	"tituloCremas tituloCremas tituloCremas"
-	"cremasFaciales cremasFaciales cremasFaciales"
-	"nombreCremas nombreCremas nombreCremas"
+	"cremaHigia cremaLavanda cremaPerse"
 	"tituloBoxesKits tituloBoxesKits tituloBoxesKits"
 	"boxesKits boxesKits boxesKits"
 	"nombreBoxesKits nombreBoxesKits nombreBoxesKits"
@@ -474,17 +472,30 @@ header nav ul li a {
 header {grid-area: header;}
 .introProductos {grid-area: introProductos;}
 .tituloJabon {grid-area: tituloJabon;}
-.jabonesShampoo {grid-area: jabonesShampoo;}
-.nombreJabon {grid-area: nombreJabon;}
+.jabonSolido {grid-area: jabonSolido;}
+.jabonmasajeador {grid-area: jabonMasajeador;}
+.shampooSolido	{grid-area: shampooSolido;}
 .tituloCremas {grid-area: tituloCremas;}
-.cremasFaciales {grid-area: cremasFaciales;}
-.nombreCremas {grid-area: nombreCremas;}
+.cremaHigia {grid-area: cremaHigia;}
+.cremaLavanda {grid-area: cremaLavanda;}
+.cremaPerse {grid-area: cremaPerse;}
 .tituloBoxesKits {grid-area: tituloBoxesKits;}
 .boxesKits {grid-area: boxesKits;}
 .nombreBoxesKits {grid-area: nombreBoxesKits;}
 .footerIzq {grid-area: footerIzq;}
 .footerMid {grid-area: footerMid;}
 .footerDer {grid-area: footerDer;}
+
+img {
+	border-radius: 5%;
+}
+
+h3 a {
+	text-decoration: none;
+	color: white;
+	font-family: Questrial;
+}
+
 
 /*cierre grid settings productos*/
 /*intro productos*/
@@ -520,39 +531,22 @@ header {grid-area: header;}
 	margin: 4%;
 }
 
-.jabonesShampoo {
+.jabonSolido {
 	display: flex;
-	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
 }
 
-.jabonesShampoo img {
-	width: 90%;
-	border-radius: 5%;
-}
-
-.nombreJabon {
+.jabonMasajeador {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
 }
 
-.nombreJabon a {
-	text-decoration: none;
-	color: white;
-	font-family: Questrial;
-	letter-spacing: .2rem;
-}
-
-.jabonsolido {
-	padding-left: 12.5%;
-}
-
-.jabonmasajeador {
-	padding-right: 
-}
-
-.shampoosolido {
-	padding-right: 14%;
+.shampooSolido {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 /*cierre seccion jabones y shampoo*/
@@ -565,40 +559,24 @@ header {grid-area: header;}
 	margin: 4%;
 }
 
-.cremasFaciales {
-	display: flex;
-	justify-content: space-evenly;
-}
-
-.cremasFaciales img {
-	width: 90%;
-	border-radius: 5%;
-}
-
-.nombreCremas {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-.nombreCremas a {
-	text-decoration: none;
-	color: white;
-	font-family: Questrial;
-	letter-spacing: .2rem;
-}
-
 .cremaHigia {
-	padding-left: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .cremaLavanda {
-	padding-left: 2.5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.cremaPersefone {
-	padding-right: 11.5%;
+.cremaPerse {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+
 
 /*cierre seccion cremas faciales*/
 /*seccion boxes y kits*/
@@ -768,7 +746,9 @@ header {grid-area: header;}
 		margin: 5%;
 	}
 
-	
+	.nombreJabon {
+		position: relative;
+	}
 
 
 
