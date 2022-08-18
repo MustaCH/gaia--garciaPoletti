@@ -11,7 +11,7 @@
 	"quienes quienes"
 	"contactoTitulo contactoTitulo"
 	"contactoImg contactoImg"
-	"footerIzq footerDer";
+	"footerIzqH footerDerH";
 
 }
 
@@ -28,6 +28,8 @@ header {grid-area: header;}
 
 body {
 	background-image: url("../assets/img/fondo.jpg");
+	margin:  0%;
+	padding:  0%;
 }
 /*header*/
 
@@ -191,48 +193,49 @@ header nav ul li a {
 /*cierre contacto*/
 /*footer*/
 
-.footerIzq {
+.footerIzqH {
 	background-color: #fdfdeb;
-	margin-top: 10%;
+	margin-top: 20%;
 }
 
-.footerIzq img {
+.footerIzqH img {
 	margin: 2%;
 }
 
-.footerIzq p {
+.footerIzqH p {
 	padding-left: 3%;
 }
 
-.footerIzq p a {
+.footerIzqH p a {
 	text-decoration: none;
 	font-weight: bolder;
 	color: black;
 }
 
-.footerDer {
+.footerDerH {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
 	text-align: right;
 	font-weight: bolder;
 	background-color: #fdfdeb;
-	margin-top: 10%;
+	margin-top: 20%;
 }
 
-.footerDer img {
+.footerDerH img {
 	margin: 10%;
 }
 
-.footerDer a {
+.footerDerH a {
 	padding-right: 1%;
 }
 
-.footerDer p {
+.footerDerH p {
 	padding-right: 1%;
 }
+
 /*cierre footer*/
-/*media queries*/
+/*media querie mobile index*/
 
 
 @media only screen and (max-width: 768px){
@@ -248,7 +251,7 @@ header nav ul li a {
 		"quienes quienes"
 		"contactoTitulo contactoTitulo"
 		"contactoImg contactoImg"
-		"footerIzq footerDer";
+		"footerIzqH footerDerH";
 	}
 
 	header {grid-area: header;}
@@ -398,31 +401,34 @@ header nav ul li a {
 	/*cierre contacto*/
 	/*footer*/
 
-	
-	.footerIzq {
+	footer {
+		margin-top: 10%;
+	}
+
+	.footerIzqH {
 		display: flex;
 		flex-direction: column;
 		background-color: none;
 		margin-top: 10%;
 	}
 
-	.footerIzq img {
+	.footerIzqH img {
 		display: none;
 	}
 
-	.footerIzq p {
+	.footerIzqH p {
 		padding-top: 10%;
 		padding-right: 26%;
 		font-size: .5rem;
 	}
 
-	.footerIzq p a {
+	.footerIzqH p a {
 		text-decoration: underline;
 		font-weight: bolder;
 		color: black;
 	}
 
-	.footerDer {
+	.footerDerH {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
@@ -432,12 +438,12 @@ header nav ul li a {
 		margin-top: 10%;
 	}
 
-	.footerDer a img {
+	.footerDerH a img {
 		width: 45%;
 		padding-top: 10%;
 	}
 
-	.footerDer p {
+	.footerDerH p {
 		text-align: center;
 		padding-left: 25%;
 		padding-right: 65%;
@@ -464,7 +470,7 @@ header nav ul li a {
 	"cremaHigia cremaLavanda cremaPerse"
 	"tituloBoxesKits tituloBoxesKits tituloBoxesKits"
 	"boxTriana boxJabones kitShower"
-	"footerIzq footerMid footerDer";
+	"footerIzq footerIzq footerDer";
 
 }
 
@@ -483,7 +489,7 @@ header {grid-area: header;}
 .boxJabones {grid-area: boxJabones;}
 .kitShower {grid-area: kitShower;}
 .footerIzq {grid-area: footerIzq;}
-.footerMid {grid-area: footerMid;}
+
 .footerDer {grid-area: footerDer;}
 
 img {
@@ -610,20 +616,48 @@ h3 a {
 /*cierre boxes y kits*/
 /*footer*/
 
-.footerMid {
-	display: flex;
-	justify-content: center;
-	margin-top: 10%;
-	padding-top: 30%;
+
+.footerIzq {
 	background-color: #fdfdeb;
+	margin-top: 20%;
 }
 
-.footerMid h4 a {
-	text-decoration: none;
-	color: black;
-	font-family: Questrial;
-	letter-spacing: .2rem;
+.footerIzq img {
+	margin: 2%;
 }
+
+.footerIzq p {
+	padding-left: 3%;
+}
+
+.footerIzq p a {
+	text-decoration: none;
+	font-weight: bolder;
+	color: black;
+}
+
+.footerDer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+	font-weight: bolder;
+	background-color: #fdfdeb;
+	margin-top: 40%;
+}
+
+.footerDer img {
+	margin: 10%;
+}
+
+.footerDer a {
+	padding-right: 1%;
+}
+
+.footerDer p {
+	padding-right: 1%;
+}
+
 
 /*cierre footer*/
 /*media queria mobile productos*/
@@ -804,4 +838,57 @@ h3 a {
 		width: 80%;
 		margin-left: 10%;
 	}
+
+	/*cierre boxes y kits mobile*/
+	/*footer mobile*/
+
+	.footer {
+		margin-top: 10%;
+	}
+
+	.footerIzq {
+		display: flex;
+		flex-direction: column;
+		background-color: none;
+		margin-top: 10%;
+	}
+
+	.footerIzq img {
+		display: none;
+	}
+
+	.footerIzq p {
+		padding-top: 10%;
+		padding-right: 26%;
+		font-size: .5rem;
+	}
+
+	.footerIzq p a {
+		text-decoration: underline;
+		font-weight: bolder;
+		color: black;
+	}
+
+	.footerDer {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		text-align: rigSht;
+		font-weight: bolder;
+		background-color: none;
+		margin-top: 10%;
+	}
+
+	.footerDer a img {
+		width: 45%;
+		padding-top: 10%;
+	}
+
+	.footerDer p {
+		text-align: center;
+		padding-left: 25%;
+		padding-right: 6S5%;
+		font-size: .5rem;
+	}
+
 }
