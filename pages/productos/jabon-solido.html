@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="../../css/estilo.css">
 	<title>GAIA - Jabón Sólido</title>
 </head>
-<body>
+<body class="grid-containerGeneralProd">
 	<!-- inicio header-->
 	<header>
 		<div>
@@ -18,30 +18,31 @@
 						<a href="../../index.html">HOME</a>
 					</li>
 					<li>
-						<a href="productos.html">Productos</a>
+						<a href="productos.html">PRODUCTOS</a>
 					</li>
 					<li>
-						<a href="../quienes-somos.html">Quienes somos?</a>
+						<a href="../quienes-somos.html">QUIENES SOMOS?</a>
 					</li>
 					<li>
-						<a href="../contacto.html">Contacto</a>
+						<a href="../contacto.html">CONTACTO</a>
 					</li>
 				</ul>
 			</nav>		
 	</header>
 	<!-- cierre header-->
-	<hr>
 	<!-- inicio main-->
-	<main>
-		<div>
-			<h1><a href="productos.html">Productos</a></h1>
+		<div class="tituloSeccion">
+			<h1><a href="productos.html">PRODUCTOS</a></h1>
 		</div>
-		<div>
-			<h2>Jabón Sólido</h2>
+		<div class="tituloProducto">
+			<h2>JABÓN SÓLIDO</h2>
+		</div>
+		<div class="imagenProducto">
 			<img src="../../assets/img/jabon-solido.jpg" alt="jabon solido">
-		<form class="formulario--compra" action="">
-			<input type="submit" value="Comprar"><br>
-			<label for="Cantidad">Cantidad</label>
+		</div>
+		<form class="formularioCompra" action="">
+			<input type="submit" value="COMPRAR"><br>
+			<label for="Cantidad">CANTIDAD</label>
 				<select name="Cantidad" id="cantidad">
                  <option value="1">1</option>
                  <option value="2">2</option>
@@ -50,16 +51,16 @@
                  <option value="5">5</option>
 				</select><br>
 		</form>
-		<form class="formulario--envio" action="">
-				<label for="envio">Calcular envío</label>
+		<form class="formularioEnvio" action="">
+				<label for="envio">CALCULAR ENVÍO</label>
 				<img src="../../assets/img/envio.png" alt="envio"><br>
 				<input type="text" name="envio" placeholder="Código postal"><br>
-				<input type="submit" value="Calcular">
+				<input type="submit" value="CALCULAR">
         </form>
-		</div>
+        <div class="productoDescrip">
 		   	<p>
 		       <h4>Sobre éste producto:</h4>
-		       <ul class="producto--descrip--content">
+		       <ul>
 		   	    	<li>Contiene carbón activado que limpia y exfolia, aporta luminosidad y equilibra el tono de la piel</li>
 		   	    	<li>Aceite esencial de tea tree que ayuda a la cicatrización de la piel, beneficiosa contra el acné    </li>
 		   	    	<li>Aceite esencial de menta que actúa sobre el enrojecimiento cutáneo reduciendo la inflamación</    li>
@@ -69,27 +70,24 @@
 		       </ul>
 		       <h5>Presentación: 50g</h5>
 		   </p>
-	</main>
+		  </div>
 	<!-- cierre main-->
-	<hr>
 	<!-- inicio footer-->
-	<footer>
-		<div>
-			<img src="../../assets/img/logo-inf.png" alt="logo inferior">
-		</div>
-		<div class="rrss">
-			<a href="https://api.whatsapp.com/" target="_blank"><img src="../../assets/img/wpp-inf.png" alt="whatsapp"></a>
-			<a href="https://www.instagram.com/gaia.centroholistico/" target="_blank"><img src="../../assets/img/ing-inf.png" alt="instagram"></a>
-			<a href="https://www.google.com.ar/" target="_blank"><img src="../../assets/img/gmail-inf.png" alt="gmail"></a>
-		</div>
-		<div>
-			<p class="contacto">
-				tiendagaialuzdelalma@gmail.com <br>
-				Tel.: 11 5482 5486 <br>
-				Cel.: 11 6884 2154 <br>
-			</p>
-		</div>
+	<footer class="footerIzqGP footerMobile">
+		<img src="../../assets/img/logo-inf.png" alt="logo inferior">
+		<p><a href="">FAQ's</a></p>
+		<p><a href="">Privacy policy</a></p>
 	</footer>
+	<div class="footerDerGP footerMobile">
+		<a href="https://api.whatsapp.com/" target="_blank"><img class="wpp--mid" src="../../assets/img/wpp-inf.png" alt="whatsapp"></a>
+		<a class="ig--mid" href="https://www.instagram.com/gaia.centroholistico/" target="_blank"><img src="../../assets/img/ing-inf.png" alt="instagram"></a>
+		<a class="gmail--mid" href="https://www.google.com.ar/" target="_blank"><img src="../../assets/img/gmail-inf.png" alt="gmail"></a>
+		<p>
+			tiendagaialuzdelalma@gmail.com <br>
+			Tel.: 11 5482 5486 <br>
+			Cel.: 11 6884 2154 <br>
+		</p>
+	</div>
 	<!--cierre footer-->
 </body>
 </html>
