@@ -979,22 +979,26 @@ h3 a {
 
 .formularioEnvio {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	font-family: Questrial;
 	font-weight: bolder;
 }
 
-.formularioEnvio input {
+.labelEnvio {
+	margin: 1%;
+}
+
+.inputEnvio {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.inputEnvio input {
 	font-family: Questrial;
 	font-weight: bolder;
-}
-
-.formularioEnvio label,img,input {
-	padding-right: 1%;
-}
-
-.formularioEnvio img {
-	width: 1%;
 }
 
 .productoDescrip {
@@ -1684,6 +1688,8 @@ header {grid-area: header;}
 
 .formContacto label,input,textarea {
 	width: 80%;
+	font-family: Questrial;
+	font-weight: bolder;
 }
 
 .newsletter {
@@ -1702,6 +1708,7 @@ header {grid-area: header;}
 
 .newsletter input {
 	width: 70%;
+	margin: 0%;
 }
 
 /*cierre formulario contacto mobile*/
