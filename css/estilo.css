@@ -655,10 +655,7 @@ h3 a {
 }
 
 .footerDer p {
-	text-align: center;
-	padding-left: 25%;
-	padding-right: 65%;
-	font-size: .5rem;
+	padding-right: 1%;
 }
 
 
@@ -889,7 +886,7 @@ h3 a {
 	.footerDer p {
 		text-align: center;
 		padding-left: 25%;
-		padding-right: 6S5%;
+		padding-right: 65%;
 		font-size: .5rem;
 	}
 
@@ -1161,30 +1158,30 @@ h3 a {
 
 	
 
-	.footerIzqGP {
+	.footerIzqMGP {
 		display: flex;
 		flex-direction: column;
 		background-color: #fdfdeb;
 		margin-top: 10%;
 	}
 
-	.footerIzqGP img {
+	.footerIzqMGP img {
 		display: none;
 	}
 
-	.footerIzqGP p {
+	.footerIzqMGP p {
 		padding-top: 10%;
 		padding-right: 26%;
 		font-size: .5rem;
 	}
 
-	.footerIzqGP p a {
+	.footerIzqMGP p a {
 		text-decoration: underline;
 		font-weight: bolder;
 		color: black;
 	}
 
-	.footerDerGP {
+	.footerDerMGP {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
@@ -1194,12 +1191,12 @@ h3 a {
 		margin-top: 10%;
 	}
 
-	.footerDerGP a img {
+	.footerDerMGP a img {
 		width: 45%;
 		padding-top: 10%;
 	}
 
-	.footerDerGP p {
+	.footerDerMGP p {
 		text-align: center;
 		padding-left: 25%;
 		padding-right: 65%;
