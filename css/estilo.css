@@ -341,6 +341,7 @@ header nav ul li a {
 	.quienes {
 		display: flex;
 		justify-content: center;
+		margin: 0% 2% 0% 2%;
 	}
 
 	.quienesTextoMob {
@@ -1204,5 +1205,572 @@ h3 a {
 	}
 
 	/*cierre footer mobile*/
+
+}
+
+/*cierre media querie mobile general productos*/
+
+/*quienes somos grid settings*/
+
+.gridContainerQuienesSomos {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto auto auto auto auto auto auto;
+	grid-template-areas: 
+	"header header"
+	"introSeccion introSeccion"
+	"presDany presDany"
+	"presMarian presMarian"
+	"video video"
+	"footerIzqQS footerDerQS"
+}
+
+header {grid-area: header;}
+.introSeccion {grid-area: introSeccion;}
+.presDany {grid-area: presDany;}
+.presMarian {grid-area: presMarian;}
+.video {grid-area: video;}
+.footerIzqQS {grid-area: footerIzqQS;}
+.footerDerQS {grid-area: footerDerQS;}
+
+/*cierre quienes somos grid settings*/
+/*intro seccion*/
+
+.introSeccion {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: Questrial;
+	color: white;
+	padding-right: 30%;
+	padding-left: 30%;
+}
+
+.introSeccion h1 {
+	margin: 20%;
+}
+
+.introSeccion p {
+	text-align: center;
+	padding: 1% 2% 3% 2%;
+}
+
+/*cierre intro seccion*/
+/*pres Dany*/
+
+.presDany {
+	display: grid;
+	flex-direction: column;
+	justify-items: center;
+	font-family: Questrial;
+	color: white;
+	padding: 0% 5% 0% 5%;
+	margin: 3% 30% 0% 30%;
+	border-radius: 5%;
+	background-color: #c5b475;
+}
+
+.presDany p {
+	text-align: center;
+	padding: 1% 2% 3% 2%;
+}
+
+/*cierre pres Dany*/
+/*pres Marian*/
+
+.presMarian {
+	display: grid;
+	flex-direction: column;
+	justify-items: center;
+	font-family: Questrial;
+	color: white;
+	padding: 0% 5% 0% 5%;
+	margin: 3% 30% 3% 30%;
+	border-radius: 5%;
+	background-color: #c5b475;
+}
+
+.presMarian p {
+	text-align: center;
+	padding: 1% 2% 3% 2%;
+}
+
+/*cierre pres Marian*/
+/*seccion video*/
+
+.video {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-right: 30%;
+	margin-left: 30%;
+	padding: 3%;
+	border-radius: 5%;
+	background-color: #fdfdeb;
+}
+
+.video iframe {
+	border-radius: 5%;
+}
+
+.videoTexto {
+	display: flex;
+	flex-direction: column;
+	padding-left: 2%;
+	font-family: Questrial;
+}
+
+.videoTexto p {
+	text-align: left;
+	padding: 2% 0% 3% 2%;
+}
+
+/*cierre seccion video*/
+/*footer*/
+
+.footerIzqQS {
+	background-color: #fdfdeb;
+	margin-top: 20%;
+}
+
+.footerIzqQS img {
+	margin: 2%;
+}
+
+.footerIzqQS p {
+	padding-left: 3%;
+}
+
+.footerIzqQS p a {
+	text-decoration: none;
+	font-weight: bolder;
+	color: black;
+}
+
+.footerDerQS {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+	font-weight: bolder;
+	background-color: #fdfdeb;
+	margin-top: 20%;
+}
+
+.footerDerQS img {
+	margin: 10%;
+}
+
+.footerDerQS a {
+	padding-right: 1%;
+}
+
+.footerDerQS p {
+	padding-right: 1%;
+}
+
+/*cierre footer*/
+/* media querie mobile quienes somos*/
+/*grid settings media querie quienes somos*/
+
+@media only screen and (max-width: 768px){
+	.gridContainerQuienesSomos {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto auto auto auto auto auto auto auto;
+	grid-template-areas: 
+	"header header"
+	"introSeccion introSeccion"
+	"presDany presDany"
+	"presMarian presMarian"
+	"video video"
+	"footerIzqQS footerDerQS"
+}
+
+header {grid-area: header;}
+.introSeccion {grid-area: introSeccion;}
+.presDany {grid-area: presDany;}
+.presMarian {grid-area: presMarian;}
+.video {grid-area: video;}
+.footerIzqQS {grid-area: footerIzqQS;}
+.footerDerQS {grid-area: footerDerQS;}
+
+/*cierre grid settings media querie mobile quienes somos*/
+/*seccion intro mobile*/
+
+.introSeccion {
+	display: flex;
+	flex-direction: column;
+	margin: 0%;
+	padding: 0%;
+}
+
+.introSeccion h1 {
+	margin: 20% 2% 20% 2%;
+}
+
+/*cierre seccion intro mobile*/
+ .presDany {
+ 	margin: 2%;
+ }
+
+ .presMarian {
+ 	margin: 2%;
+ }
+
+/*seccion video mobile*/
+
+.video {
+	display: flex;
+	flex-direction: column;
+	margin: 2%;
+}
+
+.video iframe {
+	width: 90%;
+}
+
+.videoTexto {
+	display: flex;
+	align-items: center;
+	padding: 0%;
+}
+
+.videoTexto p {
+	text-align: center;
+	padding: 0%;
+}
+
+/*cierre seccion video mobile*/
+/*footer mobile quienes somos*/
+
+
+
+	.footerIzqQS {
+		display: flex;
+		flex-direction: column;
+		background-color: #fdfdeb;
+		margin-top: 10%;
+	}
+
+	.footerIzqQS img {
+		display: none;
+	}
+
+	.footerIzqQS p {
+		padding-top: 10%;
+		padding-right: 26%;
+		font-size: .5rem;
+	}
+
+	.footerIzqQS p a {
+		text-decoration: underline;
+		font-weight: bolder;
+		color: black;
+	}
+
+	.footerDerQS {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		text-align: right;
+		font-weight: bolder;
+		background-color: #fdfdeb;
+		margin-top: 10%;
+	}
+
+	.footerDerQS a img {
+		width: 45%;
+		padding-top: 10%;
+	}
+
+	.footerDerQS p {
+		text-align: center;
+		padding-left: 25%;
+		padding-right: 65%;
+		font-size: .5rem;
+	}
+
+}
+
+/*cierre footer mobile quienes somos*/
+
+/*grid settings contacto*/
+
+ .gridContainerContacto {
+ 	display: grid;
+ 	grid-template-columns: 50% 50%;
+ 	grid-template-rows: auto auto auto auto auto;
+ 	grid-template-areas: 
+ 	"header header"
+ 	"introSeccionCT introSeccionCT"
+ 	"formContacto formContacto"
+ 	"rrss rrss"
+ 	"footerIzqCT footerDerCT"
+ }
+
+header {grid-area: header;}
+.introSeccionCT {grid-area: introSeccionCT;}
+.formContacto {grid-area: formContacto;}
+.rrss {grid-area: rrss;}
+.footerIzqCT {grid-area: footerIzqCT;}
+.footerDerCT {grid-area: footerDerCT;}
+
+/*intro seccion contacto*/
+
+.introSeccionCT {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: Questrial;
+	color: white;
+	margin: 5%;
+}
+
+.introSeccionCT p {
+	padding: 0%;
+}
+
+/*cierre intro seccion contacto*/
+/*formulario contacto*/
+
+.formContacto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: Questrial;
+	font-weight: bolder;
+	color: white;
+}
+
+.formContacto input,textarea {
+	font-family: Questrial;
+}
+
+.formContacto input {
+	margin: .5%;
+}
+
+.formContacto label,input,textarea {
+	width: 20%;
+}
+
+.newsletter {
+	display: flex;
+	flex-direction: row;
+	margin: 2% 0% 2% 0%;
+	width: 20%;
+	justify-content: space-between;
+}
+
+.newsletter label {
+	width: 100%;
+	padding-left: 10%;
+}
+
+.newsletter input {
+	width: 50%;
+}
+
+/*cierre formulario contacto*/
+/*rrss*/
+
+.rrss {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: Questrial;
+	color: white;
+	margin-top: 3%;
+}
+
+.rrss div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 30%;
+}
+
+/*cierre rrss*/
+/*footer contacto*/
+
+ .footerIzqCT {
+	background-color: #fdfdeb;
+	margin-top: 20%;
+}
+
+.footerIzqCT img {
+	margin: 2%;
+}
+
+.footerIzqCT p {
+	padding-left: 3%;
+}
+
+.footerIzqCT p a {
+	text-decoration: none;
+	font-weight: bolder;
+	color: black;
+}
+
+.footerDerCT {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+	font-weight: bolder;
+	background-color: #fdfdeb;
+	margin-top: 20%;
+}
+
+.footerDerCT img {
+	margin: 10%;
+}
+
+.footerDerCT a {
+	padding-right: 1%;
+}
+
+.footerDerCT p {
+	padding-right: 1%;
+}
+
+/*cierre footer contacto*/
+/*media querie mobile contacto*/
+
+@media only screen and (max-width: 768px){
+
+/*grid container settings mobile contacto*/
+
+ .gridContainerContacto {
+ 	display: grid;
+ 	grid-template-columns: 50% 50%;
+ 	grid-template-rows: auto auto auto auto auto;
+ 	grid-template-areas: 
+ 	"header header"
+ 	"introSeccionCT introSeccionCT"
+ 	"formContacto formContacto"
+ 	"rrss rrss"
+ 	"footerIzqCT footerDerCT"
+ }
+
+header {grid-area: header;}
+.introSeccionCT {grid-area: introSeccionCT;}
+.formContacto {grid-area: formContacto;}
+.rrss {grid-area: rrss;}
+.footerIzqCT {grid-area: footerIzqCT;}
+.footerDerCT {grid-area: footerDerCT;}
+
+
+/*grid container settings mobile contacto*/
+/*formulario contacto mobile*/
+
+.formContacto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: Questrial;
+	font-weight: bolder;
+	color: white;
+}
+
+.formContacto input,textarea {
+	font-family: Questrial;
+}
+
+.formContacto input {
+	margin: .5%;
+}
+
+.formContacto label,input,textarea {
+	width: 80%;
+}
+
+.newsletter {
+	display: flex;
+	flex-direction: row;
+	margin: 2% 0% 2% 0%;
+	width: 80%;
+	justify-content: space-between;
+}
+
+.newsletter label {
+	width: 100%;
+	font-size: .7rem;
+	padding-left: 10%;
+}
+
+.newsletter input {
+	width: 70%;
+}
+
+/*cierre formulario contacto mobile*/
+/*RRSS mobile*/
+
+.rrss {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: Questrial;
+	color: white;
+	margin-top: 8%;
+}
+
+.rrss div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+/*cierre RRSS mobile*/
+/*footer mobile contacto*/
+	.footerIzqCT {
+		display: flex;
+		flex-direction: column;
+		background-color: #fdfdeb;
+		margin-top: 10%;
+	}
+
+	.footerIzqCT img {
+		display: none;
+	}
+
+	.footerIzqCT p {
+		padding-top: 10%;
+		padding-right: 26%;
+		font-size: .5rem;
+	}
+
+	.footerIzqCT p a {
+		text-decoration: underline;
+		font-weight: bolder;
+		color: black;
+	}
+
+	.footerDerCT {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		text-align: right;
+		font-weight: bolder;
+		background-color: #fdfdeb;
+		margin-top: 10%;
+	}
+
+	.footerDerCT a img {
+		width: 45%;
+		padding-top: 10%;
+	}
+
+	.footerDerCT p {
+		text-align: center;
+		padding-left: 25%;
+		padding-right: 65%;
+		font-size: .5rem;
+	}
+
+
+/*cierre footer mobile contacto*/
 
 }
