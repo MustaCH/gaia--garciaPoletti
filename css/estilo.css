@@ -304,6 +304,7 @@ header nav ul li a {
 
 	.bienvenidos p {
 		width: 100%;
+		font-size: 1.3rem;
 		text-align: center;
 		color: white;
 	}
