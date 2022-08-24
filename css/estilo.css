@@ -66,6 +66,11 @@ header nav ul li {
 	display: inline;
 	align-content: flex-end;
 	padding: 2%;
+	transition: all 1s;
+}
+
+header nav ul li:hover {
+	transform: scale(1.1,1.1);
 }
 
 header nav ul li a {
